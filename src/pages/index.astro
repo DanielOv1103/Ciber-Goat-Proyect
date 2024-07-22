@@ -1,16 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-
-const supabaseUrl = import.meta.env.SUPABASE_URL;
-const supabaseKey = import.meta.env.SUPABASE_KEY;
+import LoginRender from '../app/Login/LoginRender.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Supabase Connection</h1>
-		<p>Supabase URL: {supabaseUrl}</p>
-		<p>Supabase Key: {supabaseKey}</p>
+	<LoginRender>
 </Layout>
 
 <style>
